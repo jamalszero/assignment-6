@@ -7,16 +7,21 @@
     <title>PHero Tube</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2b7799a4e2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- header -->
     <header>
         <!-- navbar -->
-        <nav class="w-11/12 mx-auto flex justify-between items-center border-b border-solid border-b-slate-300 py-4 my-5 flex-col lg:flex-row md:flex-row space-y-3">
-            <img src="images/Logo.png" alt="" class="w-fit">
-            <button class="btn normal-case order-last lg:order-none md:order-none">Sort by view</button>
-            <button class="btn bg-[#FF1F3D] text-white normal-case hover:bg-red-600">Blog</button>
+        <nav
+            class="w-11/12 mx-auto flex justify-between items-center border-b border-solid border-b-slate-300 py-4 mt-2 flex-col lg:flex-row md:flex-row">
+            <a href="index.html"><img src="images/Logo.png" alt="logo" class="w-fit"></a>
+            <button id="sort-by-views-button" 
+                class="btn normal-case order-last lg:order-none md:order-none hover:bg-[#FF1F3D] hover:text-white  focus:bg-[#FF1F3D] focus:text-white">Sort
+                by view</button>
+            <a href="blog.html"
+                class="btn bg-[#FF1F3D] text-white normal-case hover:bg-red-600 my-3 lg:m-0 md:m-0">Blog</a>
         </nav>
     </header>
     <!-- main -->
@@ -24,12 +29,17 @@
         <!-- catagories button section -->
         <section>
             <!-- catagories buttons container -->
-            <div></div>
+            <div id="category-buttons-container"
+                class="flex flex-wrap w-11/12 mx-auto justify-center items-center gap-4 my-9">
+
+            </div>
+
         </section>
         <!-- card section/cards  container -->
-        <section></section>
+        <section id="cards-container" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+        </section>
     </main>
-
     <script src="script.js"></script>
 </body>
 
