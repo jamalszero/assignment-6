@@ -1,6 +1,2 @@
-surge: unnatural-territory.surge.sh
-
-problem:
-1. posted date
-2. category wise card showing
-3. sort by view
+Github: https://github.com/programming-hero-web-course1/b8a6-build-phtube-jamalszero
+Surge: unnatural-territory.surge.sh
