@@ -42,7 +42,9 @@ const displayCards = async (categoryId = '1000') => {
         card.classList.add('card', 'rounded-md', 'card-compact', 'bg-base-100');
         card.innerHTML = `<figure class="relative">
         <img class="w-full rounded-md" src="${item.thumbnail}" alt="">
+
         ${item.others.posted_date? `<p class="absolute bottom-2 right-4 bg-slate-950 px-4 text-white rounded opacity-75">${Math.floor(item.others.posted_date/3600)}hrs ${parseInt((item.others.posted_date%3600)/60)}min ago</p>` : ''}
+
         </figure>
         <div class="card-body">
           <div class="flex">
@@ -88,7 +90,7 @@ const DisplayCardUsingSortByView = async (categoryId = '1000') => {
         card.innerHTML = `<figure class="relative">
         <img class="w-full rounded-md" src="${item.thumbnail}" alt="">
 
-        <p class="absolute bottom-2 right-4 bg-slate-950 px-4 text-white rounded opacity-75">${Math.floor(item.others.posted_date/3600)}hrs ${parseInt((item.others.posted_date%3600)/60)}min ago</p>
+        ${item.others.posted_date? `<p class="absolute bottom-2 right-4 bg-slate-950 px-4 text-white rounded opacity-75">${Math.floor(item.others.posted_date/3600)}hrs ${parseInt((item.others.posted_date%3600)/60)}min ago</p>` : ''}
 
         </figure>
         <div class="card-body">
