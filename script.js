@@ -99,7 +99,7 @@ const DisplayCardUsingSortByView = async (categoryId = '1000') => {
             <div class="ml-2">
             <h3 class ="font-bold">${item.title}</h3>
             <p class="my-3">
-            ${item.authors[0].profile_name} <span>${item.authors[0].verified === true ? `<img class="inline" src="images/fi_10629607.svg" alt="">` : ''}</span>
+            ${item.authors[0].profile_name} <span>${item.authors[0].verified ? `<img class="inline" src="images/fi_10629607.svg" alt="">` : ''}</span>
             </p>
             <p>${item.others.views} views</p>
             </div>
